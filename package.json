@@ -1,0 +1,25 @@
+{
+  "name": "email-mcp-server",
+  "version": "1.0.0",
+  "description": "Serveur MCP pour la gestion d'emails avec support Gmail et IMAP/SMTP",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run index.ts",
+    "build": "bun build index.ts --outdir dist",
+    "start": "bun dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "googleapis": "^144.0.0",
+    "nodemailer": "^6.9.0",
+    "imap": "^0.8.19",
+    "mailparser": "^3.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/nodemailer": "^6.4.0",
+    "@types/imap": "^0.8.0",
+    "bun-types": "latest"
+  }
+}
